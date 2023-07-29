@@ -12,7 +12,10 @@ class Reaction extends StatefulWidget {
     required this.child,
   });
 
+  ///A custom callback  that can be executed when the reaction is tapped
   final FutureOr<void> Function() onSelected;
+
+  ///A [Widget] parameter that is the actual icon displayed in the pop up list
   final Widget child;
 
   @override

@@ -4,7 +4,10 @@ import 'package:react_popup/bloc/reaction_parent_bloc.dart';
 
 class ReactionsParent extends StatefulWidget {
   const ReactionsParent({super.key, required this.child});
+
+  ///Wrap your reactions widgets with this
   final Widget child;
+
   @override
   State<ReactionsParent> createState() => _ReactionsParentState();
 }

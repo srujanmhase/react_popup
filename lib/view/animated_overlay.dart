@@ -23,17 +23,36 @@ class AnimatedReactionOverlay extends StatefulWidget {
           customCloseButton != null ? showCloseButton == true : true,
         );
 
+  ///The width of the reaction pop up
   final double width;
+
+  ///The layerlink is used to attach to the parent widget
   final LayerLink layerLink;
+
+  ///The overlay background color of the pop up type: [Color]
   final Color overlayBackgroundColor;
+
+  ///A [bool] flag to set whether the close button should be rendered
   final bool showCloseButton;
+
+  ///A [Widget] type parameter to display custom close button
   final Widget? customCloseButton;
+
+  ///The offset with which the pop up is shown with respect to the child
   final Offset? offset;
+
+  ///The alignment where the pop up is shown
   final Alignment? alignment;
+
   final AnimationController elementController;
   final AnimationController overlayController;
+
+  ///The list of [Reaction] widgets which are shown in the pop up
   final List<Reaction> reactions;
+
+  ///This controls the adding and removal of the pop up from the screen
   final OverlayEntry entry;
+
   @override
   State<AnimatedReactionOverlay> createState() =>
       _AnimatedReactionOverlayState();

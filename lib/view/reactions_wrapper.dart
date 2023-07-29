@@ -18,13 +18,28 @@ class ReactionsWrapper extends StatefulWidget {
     required this.child,
   });
 
+  ///The width of the reaction pop up
   final double? reactionWidth;
+
+  ///The overlay background color of the pop up type: [Color]
   final Color overlayBackgroundColor;
+
+  ///A [bool] flag to set whether the close button should be rendered
   final bool showCloseButton;
+
+  ///A [Widget] type parameter to display custom close button
   final Widget? customCloseButton;
+
+  ///The offset with which the pop up is shown with respect to the child
   final Offset? offset;
+
+  ///The alignment where the pop up is shown
   final Alignment? alignment;
+
+  ///The list of [Reaction] widgets which are shown in the pop up
   final List<Reaction> reactions;
+
+  ///The [Widget] you want to be able to long press and react to goes here.
   final Widget child;
 
   @override
