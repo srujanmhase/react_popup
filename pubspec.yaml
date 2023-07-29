@@ -1,7 +1,7 @@
 name: react_popup
-description: A new Flutter package project.
+description: A highly customizable flutter package that helps you to easily implement actions - reactions overlay pop-up
 version: 0.0.1
-homepage:
+repository: https://github.com/srujanmhase/react_popup
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
